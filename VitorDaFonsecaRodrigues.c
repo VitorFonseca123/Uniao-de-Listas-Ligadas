@@ -76,17 +76,18 @@ int main()
     // de teste nas listas p1 e p2
     int Lista1[5] = {1, 2, 3, 4, 5};
     int Lista2[5] = {6, 7, 8, 9, 10};
-    //POR QUE RAIOS SE EU USO &P2 N FUNCIONA MAIS NADA
-    
+
     // printf("LISTA 2: %d\n", contar(&p2));
     for (int i = 0; i < 5; i++)
     {
         anexar(&p1, Lista1[i]);
     }
-   
+
     exibirLista(&p1);
+    // POR QUE RAIOS SE EU USO &P2 N FUNCIONA MAIS NADA
     printf("\nLISTA 1: %d\n", contar(&p1));
-   
+    printf("\nLISTA 1: %d\n", contar(&p2));
+
     // o EP sera testado com chamadas deste tipo
     // NO *teste = NULL;
     // teste = uniao(p1, p2);
